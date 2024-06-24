@@ -121,9 +121,14 @@ const adDataSchema = new mongoose.Schema({
         default: 4
     },
 
+    interLoaderCount: {
+        type: Number,
+        default: 0
+    },
+
     interFeedLoaderTime: {
         type: Number,
-        default: 2
+        default: 0
     },
 
     listNativeStaring: {
@@ -134,6 +139,11 @@ const adDataSchema = new mongoose.Schema({
     nativeCount: {
         type: Number,
         default: 50
+    },
+
+    supportExtraScreen: {
+        type: Boolean,
+        default: false
     },
 
     exitNative: {

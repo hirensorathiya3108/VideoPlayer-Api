@@ -30,5 +30,5 @@ const MonetizeProductDataSend = async () => {
 
 
 adDataSend();
-MonetizeProductDataSend();
+// MonetizeProductDataSend();
 
