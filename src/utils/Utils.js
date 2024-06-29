@@ -1,7 +1,7 @@
 const utils = {
     KEY: "ssNvK67uFxOFSxvTuzPOJC0RkB9ofzRBWQUDi4jMKY8=",
     IV: "K7mWpC3R2BJWFdU7h0d/tw==",
-    APP_PACKAGE_NAME: "pc3GoL+mEtrd0XiENGIKeRFLlj/UmkaFHF5BL1vriGWdqtifY6boFWt3weKr53bR++1y2NqSNyf9akfNRRfGK/vf3HWjuKns/shPeVbD/Qvz6owcs/JMl3a3d9+rdWmxXhYFa1GvW3uKSeMX9g0GQA==",
+    APP_PACKAGE_NAME: "pc3GoL+mEtrd0XiENGIKeRFLlj/UmkaFHF5BL1vriGWdqtifY6boFWt3weKr53bR++1y2NqSNyf9akfNRRfGK/vf3HWjuKns/shPeVbD/Qt1NANFGKvqbZ2nR9etS5jr",
     API_COMMON_ROUTE: "/app/videoplayer/service",
     API_SEPARATOR_ROUTE: "/",
     MONGODB_URL: "AAlMWJlZhsxe0yuy//Gj0G5XhsK5AKAHq90JmXbrJIJqQsXAmWu5EXw2AdxUNp/2",
