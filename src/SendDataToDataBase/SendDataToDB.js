@@ -8,7 +8,7 @@ const MonetizeProductJson = require("./MonetizeProductData.json");
 
 const adDataSend = async () => {
     try {
-        await connectDB(CryptoUtils.decryptString(Utils.MONGODB_URL));
+        await connectDB(CryptoUtils.decryptString(process.env.MONGODB_URL));
         await AdData.deleteMany();
         await AdData.create(AdDataJson);
         console.log(Utils.SEND_DATA_INTO_DATABASE);
@@ -19,7 +19,7 @@ const adDataSend = async () => {
 
 const MonetizeProductDataSend = async () => {
     try {
-        await connectDB(CryptoUtils.decryptString(Utils.MONGODB_URL));
+        await connectDB(CryptoUtils.decryptString(process.env.MONGODB_URL));
         await MonetizeProduct.deleteMany();
         await MonetizeProduct.create(MonetizeProductJson);
         console.log(Utils.SEND_DATA_INTO_DATABASE);

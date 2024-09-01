@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require("express");
 const bodyParser = require('body-parser');
 const cryptoUtils = require("./utils/CryptoUtils");
@@ -17,13 +19,14 @@ app.use(utils.API_COMMON_ROUTE, MonetizeProductRouters);
 
 const start = async () => {
     try {
-        await connectDB(cryptoUtils.decryptString(utils.MONGODB_URL));
+        await connectDB(cryptoUtils.decryptString(process.env.MONGODB_URL));
         app.listen(port, () => {
             console.log(utils.CONNECTION_LIVE_PORT, port);
         });
     } catch (error) {
         console.log(error);
     }
-};
+}
+
 
 start();
