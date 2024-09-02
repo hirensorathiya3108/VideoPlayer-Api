@@ -11,6 +11,10 @@ const MonetizeProductRouters = require("./routers/MonetizeProduct");
 const app = express();
 const port = process.env.PORT || 8080;
 
+app.get("/", async, (req, res) => {
+    return res.json({status:true, message: "Working Fine!"});
+})
+
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
